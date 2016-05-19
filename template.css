@@ -10,8 +10,8 @@ font-family: Arial, Helvetica, sans-serif;;
 
 
 p.text {
- width: 400px;
- background: #9e9d9d; 
+ width: 485px;
+ background: #999999; 
  padding: 8px; 
  border: 1px solid black; 
  float: left;
@@ -20,5 +20,15 @@ p.text {
 
 }
 
+
+p.text2 {
+ width: 70px;
+ font-weight: bold;
+ background: #d59898; 
+ padding: 8px; 
+ border: 1px solid black; 
+ float: left;
+ margin-left: 20px;
+ 
 
 }
