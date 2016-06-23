@@ -1,13 +1,11 @@
 body {
   font-size: 16px;
-  color: #fff;   
-  font-family: 'Oxygen', sans-serif;
-
-
-
-background-image: url(https://github.com/Alter1387/workplace/blob/gh-pages/images/background.jpg);
-background-position: left bottom;
-background-repeat: repeat-x;
+  color: #000000;   
+  font-family: 'Georgia', sans-serif;
+ 
+  background-image: url(../images/background.jpg);
+  background-position: left bottom;
+  background-repeat: repeat;
 }
 
 
