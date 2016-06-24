@@ -8,4 +8,29 @@ body {
   background-repeat: repeat;
 }
 
+/** HEADER **/
+#header-nav {
+  background-image: url(../images/background_header.jpg);
+  background-position: left bottom;
+  background-repeat: repeat;
+}
 
+#logo-img {
+  background: url(../images/me.jpg) no-repeat; 
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+  opacity: 0.4; 
+}
+
+.p_footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+    
