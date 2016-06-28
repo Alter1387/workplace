@@ -13,6 +13,7 @@ body {
   background-image: url(../images/background_header.jpg);
   background-position: left bottom;
   background-repeat: repeat;
+  box-shadow: 0 0 20px #a1afb7;
 }
 
 #logo-img {
@@ -61,7 +62,7 @@ body {
 
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 1px solid #2f576f;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -70,9 +71,25 @@ body {
 /* END HEADER */
 
 /********** Large devices only **********/
+
+
 @media (min-width: 1200px) {
 
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/main_1200.jpg') no-repeat;
+    height: 675px;
+    box-shadow: 0 0 20px #a1afb7;
+    border: 2px solid  #a1afb7;
+  }
+  /* End Home Page */
 }
+
+
+
+
+
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -85,17 +102,35 @@ body {
   }
  
   /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/main_992.jpg') no-repeat;
+    height: 558px;
+    box-shadow: 0 0 20px #a1afb7;
+    border: 2px solid  #a1afb7;
+  }
+  /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 
-}
+
  .navbar-brand {
     padding-top: 0px;
   font-size: 1em;
   }
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/main_768.jpg') no-repeat;
+    height: 432px;
+    box-shadow: 0 0 20px #a1afb7;
+    border: 2px solid  #a1afb7;
+  }
+  /* End Home Page */
 
+}
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
@@ -123,24 +158,14 @@ body {
     margin-right: 5px;
   }
 
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
-  #xs-deliver {
-    margin-top: 5px;
-    font-size: .7em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-  /* End Header */
+  
 
-}
-
+/* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+    box-shadow: 0 0 20px #a1afb7;
+    border: 2px solid  #a1afb7;
+  }
 
     
