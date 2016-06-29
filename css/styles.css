@@ -1,6 +1,9 @@
+/** BODY **/
+
+
 body {
   font-size: 16px;
-  color: #000000;   
+  color: #000000;
   font-family: 'Georgia', sans-serif;
  
   background-image: url(../images/background.jpg);
@@ -8,7 +11,11 @@ body {
   background-repeat: repeat;
 }
 
-/** HEADER **/
+/** END BODY **/
+
+
+/** HEADER**/
+
 #header-nav {
   background-image: url(../images/background_header.jpg);
   background-position: left bottom;
@@ -25,23 +32,10 @@ body {
   opacity: 0.5; 
   }
   a:hover {
-   opacity: 0.9; 
+   opacity: 0.9;
    } 
 
 
-.p_footer {
-    position: fixed;
-    font-size: 80;
-    height: 15px;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    overflow: auto;   
-    font-size: 70%;
-
-}
 
 #nav-list {
   margin-top: 10px;
@@ -70,6 +64,58 @@ body {
 }
 /* END HEADER */
 
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 20px #a1afb7;
+    border: 2px solid  #a1afb7;
+}
+
+#kinokiller, #citysimulators, #bezdna {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+ box-shadow: 0 0 20px #a1afb7;
+    border: 2px solid  #a1afb7;
+}
+#kinokiller:hover, #citysimulators:hover, #bezdna:hover {
+  box-shadow: 0 1px 5px 1px #FFFFFF;
+  border: 2px solid  #FFFFFF;
+}
+#kinokiller {
+  background: url('../images/kinokiller.jpg') no-repeat;
+  background-position: center;
+}
+#citysimulators {
+  background: url('../images/citysimulators.jpg') no-repeat;
+  background-position: center;
+}
+
+#bezdna {
+  background: url('../images/bezdna.jpg') no-repeat;
+  background-position: center;
+}
+
+#kinokiller span, #citysimulators span, #bezdna span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+/* MEDIA */
+
+
+
+
+
 /********** Large devices only **********/
 
 
@@ -83,7 +129,7 @@ body {
     box-shadow: 0 0 20px #a1afb7;
     border: 2px solid  #a1afb7;
   }
-  /* End Home Page */
+ 
 }
 
 
@@ -144,7 +190,7 @@ body {
   }
   .navbar-brand p { /* Kosher cert */
     font-size: .6em;
-    margin-top: 12px;
+    margin-top: 0px;
   }
   .navbar-brand p img { /* Star-K */
     height: 20px;
@@ -167,5 +213,105 @@ body {
     box-shadow: 0 0 20px #a1afb7;
     border: 2px solid  #a1afb7;
   }
+  /* End Home Page */
+}
 
-    
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/main_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 0px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 0px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+ 
+  /* End Header */
+
+
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #kinokiller, #citysimulators, #bezdna {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #kinokiller, #citysimulators, #bezdna {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+  .p_footer 
+  {margin-top: 20px;}
+}
+
+
+
+
+
+
+/** FOOTER**/
+
+.p_footer {
+    position: fixed;
+    font-size: 80;
+    height: 15px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: auto;   
+    font-size: 70%;
+
+}
+
+
+
+
+/** END FOOTER **/
